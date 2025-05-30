@@ -102,35 +102,6 @@
             transform: translateY(-3px); /* Slight lift */
             border-color: #c0c0c0; /* Darker border on hover */
         }
-
-
-        /* Button styling for LLM feature */
-        .elaborate-btn {
-            background-color: transparent; /* No background */
-            color: #555; /* Slightly softer color */
-            padding: 0.5rem 1rem; /* More padding */
-            border-radius: 0.25rem; /* rounded-sm */
-            font-size: 0.9rem; /* Slightly larger text */
-            font-weight: 500;
-            transition: all 0.2s ease-in-out;
-            cursor: pointer;
-            border: 1px solid #d0d0d0; /* Subtle border */
-            display: inline-flex;
-            align-items: center;
-            gap: 0.25rem;
-        }
-        .elaborate-btn:hover {
-            background-color: #f5f5f5; /* Very light hover background */
-            border-color: #a0a0a0; /* Darker border on hover */
-            color: #2a2a2a; /* Darker text on hover */
-        }
-        .elaborate-btn:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            background-color: transparent;
-            border-color: #e0e0e0;
-            color: #888;
-        }
     </style>
 </head>
 <body class="p-6 sm:p-10 md:p-16 lg:p-24">
@@ -183,29 +154,32 @@
                 <div class="item-card" id="project-innovote">
                     <h3 class="text-xl sm:text-2xl font-medium mb-2 text-gray-700">Innovote <span class="text-base font-normal text-gray-500">- Student Election System</span></h3>
                     <p class="text-gray-600 text-sm mb-2">HTML, CSS, JS, PHP, SQL | 2024</p>
-                    <p class="text-gray-700 max-w-2xl mb-4" data-project-title="Innovote - Student Election System" data-project-description="Collaborated with a team of 5 to develop a secure voting portal with candidate profiles and live tally.">
-                        Collaborated with a team of 5 to develop a secure voting portal with candidate profiles and live tally.
+                    <p class="text-gray-700 max-w-2xl mb-4">
+                        Collaborated with a team of 5 to develop a secure voting portal with candidate profiles and live tally. This project enhanced my skills in full-stack web development, database management, and secure system design, providing a practical understanding of real-world application building.
                     </p>
-                    <button class="elaborate-btn" data-project-id="innovote">Elaborate <span class="loading-spinner hidden text-xs ml-1">(Generating...)</span></button>
-                    <div id="elaboration-innovote" class="elaboration-content mt-4 text-gray-800 italic text-base hidden"></div>
+                    <p class="elaboration-content mt-4 text-gray-800 italic text-base">
+                        Innovote was a challenging yet rewarding project where our team focused on creating a robust and user-friendly election system. We prioritized security measures to ensure data integrity and voter anonymity, while also implementing a live tally feature that provided real-time results. This experience was crucial in solidifying my understanding of collaborative software development and managing project workflows.
+                    </p>
                 </div>
                 <div class="item-card" id="project-angelline">
                     <h3 class="text-xl sm:text-2xl font-medium mb-2 text-gray-700">Angel Line <span class="text-base font-normal text-gray-500">- Chatbot</span></h3>
                     <p class="text-gray-600 text-sm mb-2">Swift | 2025</p>
-                    <p class="text-gray-700 max-w-2xl mb-4" data-project-title="Angel Line - Chatbot" data-project-description="MacOS chatbot for zodiac insights and angel number guidance.">
+                    <p class="text-gray-700 max-w-2xl mb-4">
                         MacOS chatbot for zodiac insights and angel number guidance.
                     </p>
-                    <button class="elaborate-btn" data-project-id="angelline">Elaborate <span class="loading-spinner hidden text-xs ml-1">(Generating...)</span></button>
-                    <div id="elaboration-angelline" class="elaboration-content mt-4 text-gray-800 italic text-base hidden"></div>
+                    <p class="elaboration-content mt-4 text-gray-800 italic text-base">
+                        Angel Line allowed me to explore Swift development for MacOS, focusing on natural language processing and API integration to deliver personalized insights. The technical challenge involved designing intuitive conversational flows and handling dynamic data retrieval to provide accurate astrological information and angel number interpretations. It sharpened my ability to create engaging user experiences within a desktop application environment.
+                    </p>
                 </div>
                 <div class="item-card" id="project-thevault">
                     <h3 class="text-xl sm:text-2xl font-medium mb-2 text-gray-700">The Vault <span class="text-base font-normal text-gray-500">- Content Management System</span></h3>
                     <p class="text-gray-600 text-sm mb-2">HTML, CSS, PHP, SQL | 2025</p>
-                    <p class="text-gray-700 max-w-2xl mb-4" data-project-title="The Vault - Content Management System" data-project-description="Content connection and organization through channels.">
+                    <p class="text-gray-700 max-w-2xl mb-4">
                         Content connection and organization through channels.
                     </p>
-                    <button class="elaborate-btn" data-project-id="thevault">Elaborate <span class="loading-spinner hidden text-xs ml-1">(Generating...)</span></button>
-                    <div id="elaboration-thevault" class="elaboration-content mt-4 text-gray-800 italic text-base hidden"></div>
+                    <p class="elaboration-content mt-4 text-gray-800 italic text-base">
+                        "The Vault" was designed as a robust Content Management System (CMS) to facilitate seamless content organization and connection through a channel-based structure. This project significantly deepened my understanding of backend development with PHP and SQL, specifically in designing scalable database schemas and implementing efficient content retrieval mechanisms. It also provided valuable experience in building a user-friendly interface that allows for intuitive content management.
+                    </p>
                 </div>
             </div>
         </section>
@@ -217,14 +191,14 @@
                     <h3 class="text-xl sm:text-2xl font-medium mb-2 text-gray-700">Clinic Assistant & Design Support <span class="text-base font-normal text-gray-500">- Starbarks Veterinary Clinic</span></h3>
                     <p class="text-gray-600 text-sm mb-2">2024-Present</p>
                     <p class="text-gray-700 max-w-2xl">
-                        Assisted with data entry, reception, and social media graphics.
+                        Assisted with data entry, reception, and social media graphics. This role honed my organizational skills, attention to detail in data management, and ability to create compelling visuals for public engagement.
                     </p>
                 </div>
                 <div class="item-card">
                     <h3 class="text-xl sm:text-2xl font-medium mb-2 text-gray-700">Design Support <span class="text-base font-normal text-gray-500">- Marikina Heights and Mile Heights Veterinary Clinic</span></h3>
                     <p class="text-gray-600 text-sm mb-2">2025</p>
                     <p class="text-gray-700 max-w-2xl">
-                        Designed branding materials and client-facing graphics.
+                        Designed branding materials and client-facing graphics. This experience further developed my proficiency in graphic design tools and my understanding of visual communication in a professional setting.
                     </p>
                 </div>
             </div>
@@ -243,80 +217,5 @@
         </footer>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const elaborateButtons = document.querySelectorAll('.elaborate-btn');
-
-            elaborateButtons.forEach(button => {
-                button.addEventListener('click', async () => {
-                    const projectId = button.dataset.projectId;
-                    const projectParagraph = button.previousElementSibling; // The <p> tag with project details
-                    const projectTitle = projectParagraph.dataset.projectTitle;
-                    const projectDescription = projectParagraph.dataset.projectDescription;
-                    const elaborationDiv = document.getElementById(`elaboration-${projectId}`);
-                    const loadingSpinner = button.querySelector('.loading-spinner');
-
-                    // Toggle visibility of elaboration
-                    if (elaborationDiv.classList.contains('hidden') && elaborationDiv.textContent !== '') {
-                        elaborationDiv.classList.remove('hidden');
-                        return;
-                    } else if (!elaborationDiv.classList.contains('hidden')) {
-                        elaborationDiv.classList.add('hidden');
-                        return;
-                    }
-
-                    // Show loading spinner and disable button
-                    loadingSpinner.classList.remove('hidden');
-                    button.disabled = true;
-                    elaborationDiv.textContent = ''; // Clear previous content
-                    elaborationDiv.classList.add('hidden'); // Hide until content is ready
-
-                    const prompt = `Elaborate on the following project description, focusing on its impact, technical challenges, or unique aspects, in about 3-4 sentences.
-Project Title: ${projectTitle}
-Description: ${projectDescription}`;
-
-                    let chatHistory = [];
-                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-
-                    const payload = { contents: chatHistory };
-                    const apiKey = ""; // Leave this as-is; Canvas will provide it at runtime
-                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-
-                    try {
-                        const response = await fetch(apiUrl, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify(payload)
-                        });
-
-                        if (!response.ok) {
-                            throw new Error(`HTTP error! status: ${response.status}`);
-                        }
-
-                        const result = await response.json();
-
-                        if (result.candidates && result.candidates.length > 0 &&
-                            result.candidates[0].content && result.candidates[0].content.parts &&
-                            result.candidates[0].content.parts.length > 0) {
-                            const text = result.candidates[0].content.parts[0].text;
-                            elaborationDiv.textContent = text;
-                            elaborationDiv.classList.remove('hidden'); // Show the elaborated content
-                        } else {
-                            elaborationDiv.textContent = 'Failed to generate elaboration. Please try again.';
-                            elaborationDiv.classList.remove('hidden');
-                            console.error('Unexpected API response structure:', result);
-                        }
-                    } catch (error) {
-                        console.error('Error calling Gemini API:', error);
-                        elaborationDiv.textContent = 'Error: Could not connect to the elaboration service.';
-                        elaborationDiv.classList.remove('hidden');
-                    } finally {
-                        loadingSpinner.classList.add('hidden');
-                        button.disabled = false;
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
