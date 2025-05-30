@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerson Dave Capua - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a clean look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top left, #fcfcfc, #f5f5f5); /* Subtle radial gradient */
+            color: #2a2a2a; /* Slightly softer black for text */
+            line-height: 1.6;
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e9e9e9;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b0b0b0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #888;
+        }
+
+        /* Enhanced link styling */
+        a {
+            color: #2a2a2a;
+            text-decoration: none; /* No underline by default */
+            position: relative;
+            transition: color 0.2s ease-in-out;
+        }
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #2a2a2a;
+            transition: width 0.2s ease-in-out;
+        }
+        a:hover {
+            color: #000;
+        }
+        a:hover::after {
+            width: 100%;
+            background-color: #000; /* Darker underline on hover */
+        }
+
+        /* Main content wrapper shadow */
+        .main-content-wrapper {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow for the whole content area */
+            background-color: #ffffff; /* Ensure background is white for shadow effect */
+            border-radius: 0.5rem; /* Rounded corners for the main wrapper */
+        }
+
+        /* Section styling for the new "Are.na" inspired look */
+        .portfolio-section {
+            padding: 3rem 0; /* More vertical space */
+            border-bottom: 1px solid #e0e0e0; /* Subtle separator */
+        }
+        .portfolio-section:last-child {
+            border-bottom: none; /* No border on the last section */
+            padding-bottom: 0;
+        }
+
+        /* Section header styling with subtle underline */
+        .portfolio-section h2 {
+            position: relative;
+            display: inline-block; /* To make the underline only as wide as the text */
+            margin-bottom: 2.5rem; /* Increased margin below header */
+            padding-bottom: 0.5rem; /* Space for the line */
+        }
+        .portfolio-section h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%; /* Full width of the text */
+            height: 1px;
+            background-color: #a0a0a0; /* A subtle grey line */
+        }
+
+        /* Individual project/extracurricular item styling */
+        .item-card {
+            padding: 1.5rem;
+            border: 1px solid #e5e5e5; /* Light border */
+            border-radius: 0.375rem; /* rounded-md */
+            transition: all 0.2s ease-in-out;
+            background-color: #ffffff; /* Ensure background is white */
+        }
+        .item-card:hover {
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); /* More pronounced shadow on hover */
+            transform: translateY(-3px); /* Slight lift */
+            border-color: #c0c0c0; /* Darker border on hover */
+        }
+
+
+        /* Button styling for LLM feature */
+        .elaborate-btn {
+            background-color: transparent; /* No background */
+            color: #555; /* Slightly softer color */
+            padding: 0.5rem 1rem; /* More padding */
+            border-radius: 0.25rem; /* rounded-sm */
+            font-size: 0.9rem; /* Slightly larger text */
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+            border: 1px solid #d0d0d0; /* Subtle border */
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        .elaborate-btn:hover {
+            background-color: #f5f5f5; /* Very light hover background */
+            border-color: #a0a0a0; /* Darker border on hover */
+            color: #2a2a2a; /* Darker text on hover */
+        }
+        .elaborate-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            background-color: transparent;
+            border-color: #e0e0e0;
+            color: #888;
+        }
+    </style>
+</head>
+<body class="p-6 sm:p-10 md:p-16 lg:p-24">
+
+    <div class="max-w-7xl mx-auto main-content-wrapper p-6 sm:p-10 md:p-16 lg:p-24 rounded-lg">
+        <header class="mb-16 md:mb-24">
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-gray-900 leading-tight">EMERSON DAVE CAPUA</h1>
+            <p class="text-xl sm:text-2xl text-gray-700 mt-6 max-w-3xl">
+                Hello! I'm Emerson Dave Capua, a 3rd Year Computer Science student exploring the vast possibilities within software development. I'm passionate about building innovative solutions and leveraging my technical skills to create impactful projects. Always eager to learn and contribute, I thrive in environments that challenge me to grow.
+            </p>
+        </header>
+
+        <section class="portfolio-section">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800">SKILLS & TOOLS</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-6 text-lg mt-8">
+                <div>
+                    <h3 class="font-medium text-xl mb-2 text-gray-700">Programming Languages</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Java</li>
+                        <li>Swift</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-xl mb-2 text-gray-700">Web Development</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-xl mb-2 text-gray-700">Database</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-medium text-xl mb-2 text-gray-700">Software</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Canva</li>
+                        <li>MS Office</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800">SELECTED PROJECTS</h2>
+            <div class="space-y-10 mt-8">
+                <div class="item-card" id="project-innovote">
+                    <h3 class="text-xl sm:text-2xl font-medium mb-2 text-gray-700">Innovote <span class="text-base font-normal text-gray-500">- Student Election System</span></h3>
+                    <p class="text-gray-600 text-sm mb-2">HTML, CSS, JS, PHP, SQL | 2024</p>
+                    <p class="text-gray-700 max-w-2xl mb-4" data-project-title="Innovote - Student Election System" data-project-description="Collaborated with a team of 5 to develop a secure voting portal with candidate profiles and live tally.">
+                        Collaborated with a team of 5 to develop a secure voting portal with candidate profiles and live tally.
+                    </p>
+                    <button class="elaborate-btn" data-project-id="innovote">Elaborate <span class="loading-spinner hidden text-xs ml-1">(Generating...)</span></button>
+                    <div id="elaboration-innovote" class="elaboration-content mt-4 text-gray-800 italic text-base hidden"></div>
+                </div>
+                <div class="item-card" id="project-angelline">
+                    <h3 class="text-xl sm:text-2xl font-medium mb-2 text-gray-700">Angel Line <span class="text-base font-normal text-gray-500">- Chatbot</span></h3>
+                    <p class="text-gray-600 text-sm mb-2">Swift | 2025</p>
+                    <p class="text-gray-700 max-w-2xl mb-4" data-project-title="Angel Line - Chatbot" data-project-description="MacOS chatbot for zodiac insights and angel number guidance.">
+                        MacOS chatbot for zodiac insights and angel number guidance.
+                    </p>
+                    <button class="elaborate-btn" data-project-id="angelline">Elaborate <span class="loading-spinner hidden text-xs ml-1">(Generating...)</span></button>
+                    <div id="elaboration-angelline" class="elaboration-content mt-4 text-gray-800 italic text-base hidden"></div>
+                </div>
+                <div class="item-card" id="project-thevault">
+                    <h3 class="text-xl sm:text-2xl font-medium mb-2 text-gray-700">The Vault <span class="text-base font-normal text-gray-500">- Content Management System</span></h3>
+                    <p class="text-gray-600 text-sm mb-2">HTML, CSS, PHP, SQL | 2025</p>
+                    <p class="text-gray-700 max-w-2xl mb-4" data-project-title="The Vault - Content Management System" data-project-description="Content connection and organization through channels.">
+                        Content connection and organization through channels.
+                    </p>
+                    <button class="elaborate-btn" data-project-id="thevault">Elaborate <span class="loading-spinner hidden text-xs ml-1">(Generating...)</span></button>
+                    <div id="elaboration-thevault" class="elaboration-content mt-4 text-gray-800 italic text-base hidden"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800">EXTRACURRICULARS</h2>
+            <div class="space-y-10 mt-8">
+                <div class="item-card">
+                    <h3 class="text-xl sm:text-2xl font-medium mb-2 text-gray-700">Clinic Assistant & Design Support <span class="text-base font-normal text-gray-500">- Starbarks Veterinary Clinic</span></h3>
+                    <p class="text-gray-600 text-sm mb-2">2024-Present</p>
+                    <p class="text-gray-700 max-w-2xl">
+                        Assisted with data entry, reception, and social media graphics.
+                    </p>
+                </div>
+                <div class="item-card">
+                    <h3 class="text-xl sm:text-2xl font-medium mb-2 text-gray-700">Design Support <span class="text-base font-normal text-gray-500">- Marikina Heights and Mile Heights Veterinary Clinic</span></h3>
+                    <p class="text-gray-600 text-sm mb-2">2025</p>
+                    <p class="text-gray-700 max-w-2xl">
+                        Designed branding materials and client-facing graphics.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio-section">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-800">CONTACT</h2>
+            <ul class="text-lg space-y-3 mt-8">
+                <li><strong class="font-medium">Email:</strong> <a href="mailto:emdcapua@gmail.com" class="hover:text-black">emdcapua@gmail.com</a></li>
+                <li><strong class="font-medium">Portfolio Link:</strong> <a href="https://emersoncapua.github.io" target="_blank" rel="noopener noreferrer" class="hover:text-black">emersoncapua.github.io</a></li>
+            </ul>
+        </section>
+
+        <footer class="mt-16 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 Emerson Dave Capua. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elaborateButtons = document.querySelectorAll('.elaborate-btn');
+
+            elaborateButtons.forEach(button => {
+                button.addEventListener('click', async () => {
+                    const projectId = button.dataset.projectId;
+                    const projectParagraph = button.previousElementSibling; // The <p> tag with project details
+                    const projectTitle = projectParagraph.dataset.projectTitle;
+                    const projectDescription = projectParagraph.dataset.projectDescription;
+                    const elaborationDiv = document.getElementById(`elaboration-${projectId}`);
+                    const loadingSpinner = button.querySelector('.loading-spinner');
+
+                    // Toggle visibility of elaboration
+                    if (elaborationDiv.classList.contains('hidden') && elaborationDiv.textContent !== '') {
+                        elaborationDiv.classList.remove('hidden');
+                        return;
+                    } else if (!elaborationDiv.classList.contains('hidden')) {
+                        elaborationDiv.classList.add('hidden');
+                        return;
+                    }
+
+                    // Show loading spinner and disable button
+                    loadingSpinner.classList.remove('hidden');
+                    button.disabled = true;
+                    elaborationDiv.textContent = ''; // Clear previous content
+                    elaborationDiv.classList.add('hidden'); // Hide until content is ready
+
+                    const prompt = `Elaborate on the following project description, focusing on its impact, technical challenges, or unique aspects, in about 3-4 sentences.
+Project Title: ${projectTitle}
+Description: ${projectDescription}`;
+
+                    let chatHistory = [];
+                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+                    const payload = { contents: chatHistory };
+                    const apiKey = ""; // Leave this as-is; Canvas will provide it at runtime
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    try {
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! status: ${response.status}`);
+                        }
+
+                        const result = await response.json();
+
+                        if (result.candidates && result.candidates.length > 0 &&
+                            result.candidates[0].content && result.candidates[0].content.parts &&
+                            result.candidates[0].content.parts.length > 0) {
+                            const text = result.candidates[0].content.parts[0].text;
+                            elaborationDiv.textContent = text;
+                            elaborationDiv.classList.remove('hidden'); // Show the elaborated content
+                        } else {
+                            elaborationDiv.textContent = 'Failed to generate elaboration. Please try again.';
+                            elaborationDiv.classList.remove('hidden');
+                            console.error('Unexpected API response structure:', result);
+                        }
+                    } catch (error) {
+                        console.error('Error calling Gemini API:', error);
+                        elaborationDiv.textContent = 'Error: Could not connect to the elaboration service.';
+                        elaborationDiv.classList.remove('hidden');
+                    } finally {
+                        loadingSpinner.classList.add('hidden');
+                        button.disabled = false;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
